@@ -8,6 +8,7 @@
   /* <color> */
   --principal-bg-color: #fff;
   --secundaria-bg-color: #f4f4f4;
+  --principal-border-color: #c3c3c3;
   /*--- color --- */
   /* <border> */
   --radius-leve: 10px;
@@ -24,45 +25,44 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   height: 100vh;
   width: 100%;
   background: var(--principal-bg-color);
 }
 /* <LOGIN/INDEX PAGE> */
 .area-login {
-    padding: 2em;
-    width: 25%;
-    max-width: 400px;
-    border: 1px solid #000;
-    border-radius: var(--radius-leve);
-    background: var(--secundaria-bg-color);
+  padding: 2em;
+  width: 100%;
+  max-width: 350px;
+  border: 1px solid var(--principal-border-color);
+  border-radius: var(--radius-leve);
+  background: var(--secundaria-bg-color);
 }
-
 
 /* <LOGIN/INDEX PAGE - AREA LOGO> */
 .area-login-logo {
-    text-align: center;
+  text-align: center;
   margin: 1em auto;
 }
 .area-login-logo img {
-    width: 100px;
-    height: 100px;
-    border-radius: var(--radius-acentuada);
+  width: 100px;
+  height: 100px;
+  border-radius: var(--radius-acentuada);
 }
 .area-login-logo h1 {
-    font-size: 2em;
-    font-family: var(--fonte-principal);
+  font-size: 2em;
+  font-family: var(--fonte-principal);
 }
 /*--- LOGIN/INDEX PAGE - AREA LOGO ---*/
 
-
 /* <LOGIN/INDEX PAGE - FORM> */
 .area-login-form {
-    text-align: center;
+  text-align: center;
 }
 .area-login-form > input,
 .area-login-form > button {
-    display: block;
+  display: block;
   margin: 1em auto;
   width: 100%;
   padding: 10px;
@@ -94,7 +94,68 @@ body {
   box-shadow: 5px 5px 10px rgba(54, 104, 75, 0.507);
   background: #57c785;
 }
+
 /*--- LOGIN/INDEX PAGE - FORM ---*/
 
-
 /*--- LOGIN/INDEX PAGE ---*/
+
+/* <HOME PAGE> */
+
+.home-area-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 1em;
+  padding: 1em;
+  width: 100%;
+  max-width: 700px;
+  border: 1px solid #000;
+  border-radius: var(--radius-leve);
+}
+
+.home-area-main h1 {
+  font-family: var(--fonte-titulos-inputs);
+}
+
+.home-area-main-sec-card {
+  width: 100%;
+  max-width: 250px;
+  height: 200px;
+  padding: 1em;
+  text-align: center;
+  border: 1px solid var(--principal-border-color);
+  border-radius: var(--radius-acentuada);
+  background: var(--secundaria-bg-color);
+}
+.home-dados {
+  overflow-wrap: break-word;
+  padding: 0.5em;
+  font-family: var(--fonte-principal);
+  font-size: 3em;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+}
+.home-area-header {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.home-area-header figcaption {
+  font-family: var(--fonte-principal);
+  font-size: 1.5em;
+}
+.home-area-user img {
+  width: 90px;
+  height: 90px;
+  border: 1px solid var(--principal-border-color);
+  border-radius: var(--radius-acentuada);
+}
+.home-area-user {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  text-align: center;
+}
+
+/*--- HOME PAGE ---*/
