@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Young+Serif&display=swap");
+
+:root {
+  /* <fonts> */
+  --fonte-titulos-inputs: "inter", arial;
+  --fonte-principal: "Young Serif";
+  /*--- fonts ---*/
+  /* <color> */
+  --principal-bg-color: #fff;
+  --secundaria-bg-color: #f4f4f4;
+  /*--- color --- */
+  /* <border> */
+  --radius-leve: 10px;
+  --radius-acentuada: 25px;
+  /*--- border --- */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--fonte-titulos-inputs);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: var(--principal-bg-color);
+}
+/* <LOGIN/INDEX PAGE> */
+.area-login {
+    padding: 2em;
+    width: 25%;
+    max-width: 400px;
+    border: 1px solid #000;
+    border-radius: var(--radius-leve);
+    background: var(--secundaria-bg-color);
+}
+
+
+/* <LOGIN/INDEX PAGE - AREA LOGO> */
+.area-login-logo {
+    text-align: center;
+  margin: 1em auto;
+}
+.area-login-logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: var(--radius-acentuada);
+}
+.area-login-logo h1 {
+    font-size: 2em;
+    font-family: var(--fonte-principal);
+}
+/*--- LOGIN/INDEX PAGE - AREA LOGO ---*/
+
+
+/* <LOGIN/INDEX PAGE - FORM> */
+.area-login-form {
+    text-align: center;
+}
+.area-login-form > input,
+.area-login-form > button {
+    display: block;
+  margin: 1em auto;
+  width: 100%;
+  padding: 10px;
+  border-radius: var(--radius-leve);
+  font-family: var(--fonte-titulos-inputs);
+  font-size: 1em;
+}
+.area-login-form input {
+  padding-left: 3em;
+}
+.area-login-form input[name="user"] {
+  background: url("../img/icons/user-solid-full.svg") no-repeat left top;
+}
+.area-login-form input[name="password"] {
+  background: url("../img/icons/lock-solid-full.svg") no-repeat left top;
+}
+.area-login-form button {
+  transition: all 0.2s;
+  background: #2a7b9b;
+  background: linear-gradient(
+    90deg,
+    rgba(42, 123, 155, 1) 0%,
+    rgba(87, 199, 133, 1) 87%,
+    rgba(87, 199, 133, 1) 87%
+  );
+}
+.area-login-form button:hover {
+  font-weight: 700;
+  box-shadow: 5px 5px 10px rgba(54, 104, 75, 0.507);
+  background: #57c785;
+}
+/*--- LOGIN/INDEX PAGE - FORM ---*/
+
+
+/*--- LOGIN/INDEX PAGE ---*/
