@@ -1,51 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
     <title>Bibi home</title>
-</head>
-<body>
+  </head>
+  <body>
     <header class="home-area-header">
-        <div class="home-area-user">
-            <figure>
-                <img src="../img/ru.jpeg" alt="foto de Usuário">
-                <figcaption>nome Usuário</figcaption>
-            </figure>
-        </div>
+      <div class="home-area-header-content">
+        <h1>Bibi</h1>
+        <figure>
+          <img src="../img/ru.jpeg" alt="user" />
+        </figure>
+      </div>
     </header>
     <main class="home-area-main">
-        <section class="home-area-main-sec-card" data-panel="livros">
-            <h1>LIVROS</h1>
-            <div class="home-dados">9455</div>
-        </section>
-        <section class="home-area-main-sec-card" data-panel="users">
-            <h1>USUÁRIOS</h1>
-            <div class="home-dados">10</div>
-        </section>
-        <section class="home-area-main-sec-card" data-panel="emprestimos">
-            <h1>EMPRÉSTIMOS</h1>
-            <div class="home-dados">100</div>
-        </section>
-        <section class="home-area-main-sec-card" data-panel="atrasos"> 
-            <h1>ATRASOS</h1>
-            <div class="home-dados">20</div>
-        </section>
-        <section class="home-area-main-panel ativo" id="livros">
-            abc
-        </section>
-        <section class="home-area-main-panel" id="users">
-            def
-        </section>
-        <section class="home-area-main-panel" id="emprestimos">
-            ghi
-        </section>
-        <section class="home-area-main-panel" id="atrasos">
-            jkl
-        </section>
+      <section class="home-area-main-sec-card" data-panel="livros">
+        <h1>LIVROS</h1>
+        <div class="home-dados">9455</div>
+      </section>
+      <section class="home-area-main-sec-card" data-panel="users">
+        <h1>USUÁRIOS</h1>
+        <div class="home-dados">10</div>
+      </section>
+      <section class="home-area-main-sec-card" data-panel="emprestimos">
+        <h1>EMPRÉSTIMOS</h1>
+        <div class="home-dados">100</div>
+      </section>
+      <section class="home-area-main-panel" id="livros">
+        <nav class="home-area-main-panel-nav">
+          <input type="search" />
+          <button>Novo livro</button>
+        </nav>
+        <div class="home-area-main-panel-table-container">
+          <table>
+            <thead>
+              <colgroup>
+                <col style="width: 30%" />
+                <col style="width: 30%" />
+                <col style="width: 20%" />
+                <col style="width: 5%" />
+                <col style="width: 15%" />
+              </colgroup>
+            </thead>
+            <thead>
+              <tr>
+                <th>título</th>
+                <th>autor</th>
+                <th>categoria</th>
+                <th>quantidade</th>
+                <th>ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>
+                  <button>[Excluir]</button>
+                  <button>[editar]</button>
+                </td>
+              </tr>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>[Excluir][editar]</td>
+              </tr>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>[Excluir][editar]</td>
+              </tr>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>[Excluir][editar]</td>
+              </tr>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>[Excluir][editar]</td>
+              </tr>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>[Excluir][editar]</td>
+              </tr>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>[Excluir][editar]</td>
+              </tr>
+              <tr>
+                <td>O Cortiço</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>[Excluir][editar]</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="home-area-main-panel" id="users">
+        <nav class="home-area-main-panel-nav">
+          <input type="search" placeholder="procurar nome" />
+          <button>Novo(a) leitor(a)</button>
+        </nav>
+        <div class="home-area-main-panel-table-container">
+          <table>
+            <thead>
+              <colgroup>
+                <col style="width: 30%" />
+                <col style="width: 30%" />
+                <col style="width: 20%" />
+                <col style="width: 5%" />
+                <col style="width: 15%" />
+              </colgroup>
+            </thead>
+            <thead>
+              <tr>
+                <th>nome</th>
+                <th>email</th>
+                <th>função</th>
+                <th>empréstimo</th>
+                <th>ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Francisco Ruan Silva Ferreira</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>
+                  <button>[devolvendo]</button>
+                  <button>[levando]</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+      <section class="home-area-main-panel ativo" id="emprestimos">
+        <nav class="home-area-main-panel-nav">
+          <input type="search" placeholder="procurar nome" />
+          <div class="home-area-main-panel-nav-dados">atrasados: 20</div>
+        </nav>
+        <div class="home-area-main-panel-table-container">
+          <table>
+            <thead>
+              <colgroup>
+                <col style="width: 30%" />
+                <col style="width: 30%" />
+                <col style="width: 20%" />
+                <col style="width: 5%" />
+                <col style="width: 15%" />
+              </colgroup>
+            </thead>
+            <thead>
+              <tr>
+                <th>nome</th>
+                <th>email</th>
+                <th>função</th>
+                <th>empréstimo</th>
+                <th>ações</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Francisco Ruan Silva Ferreira</td>
+                <td>Aluísio Azevedo</td>
+                <td>Romance</td>
+                <td>2</td>
+                <td>
+                  <button>[mostrar leitor(a)]</button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
     </main>
     <script src="../js/spa.js"></script>
-</body>
+  </body>
 </html>
