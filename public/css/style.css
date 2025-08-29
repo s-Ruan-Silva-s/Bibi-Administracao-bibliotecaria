@@ -16,6 +16,7 @@
   --radius-leve: 10px;
   --radius-acentuada: 25px;
   /*--- border --- */
+
 }
 * {
   margin: 0;
@@ -32,6 +33,9 @@ body {
   width: 100%;
   background: var(--principal-bg-color);
 }
+/* input{
+  display: block;
+} */
 /* <LOGIN/INDEX PAGE> */
 .area-login {
   padding: 2em;
@@ -173,6 +177,7 @@ body {
 /* <AREA MAIN PANEL> */
 .home-area-main-panel{
   display: none;
+  position: relative;
   padding: 1em;
   width: 100%;
   height: 350px;
@@ -180,7 +185,7 @@ body {
   border-radius: var(--radius-leve);
 }
 .home-area-main-panel.ativo{
-  display: block;
+  display: block !important;
 }
 .home-area-main-panel table{
   width: 100%;
@@ -232,6 +237,79 @@ body {
 .home-area-main-panel-nav-dados {
   font-size: 1.5em;
   font-weight: var(--negrito-leve);
+}
+
+.panel-cadastro{
+  position: absolute;
+  margin: -1em;
+  padding: 1em;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 1.2em;
+  font-weight: var(--negrito-leve);
+  display: none;
+  border-radius: var(--radius-leve);
+  background-color: rgba(0, 255, 255, .9);
+}
+.panel-cadastro form{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr .5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: .5em;
+  width: 100%;
+}
+.panel-cadastro form>input{
+  width: 100%;
+}
+.panel-cadastro form input.cadastrar{
+  color: rgba(0,0,0,0);
+  background: #0f0 url('../img/icons/circle-up-solid-full.svg') no-repeat center center;
+}
+/* <POSIÇOES NO GRID DO FORM> */
+.gfp1{
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.gfp2{
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+}
+.gfp3{
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+}
+.gfp4{
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+}
+.gfp5{
+  grid-column: 1 / 2;
+  grid-row: 2 / 2;
+}
+.gfp6{
+  grid-column: 2 / 3;
+  grid-row: 2 / 2;
+}
+.gfp7{
+  grid-column: 3 / 4;
+  grid-row: 2 / 2;
+}
+.gfp8{
+  grid-column: 4 / 5;
+  grid-row: 2 / 2;
+}
+.gfp9{
+  grid-column: 5 / 5;
+  grid-row: 2 / 2;
+}
+.gfp10{
+  grid-column: 5 / 5;
+  grid-row: 1 / 2;
+}
+/*--- POSIÇOES NO GRID DO FORM ---*/
+.displayOn{
+  display: block !important;
 }
 
 /*--- AREA MAIN PANEL ---*/

@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <link rel="shortcut icon" href="../img/logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="icon" href="/img/logo.png" type="image/x-icon" />
     <title>Bibi home</title>
   </head>
   <body>
@@ -12,7 +12,7 @@
       <div class="home-area-header-content">
         <h1>Bibi</h1>
         <figure>
-          <img src="../img/ru.jpeg" alt="user" />
+          <img src="/img/ru.jpeg" alt="user" />
         </figure>
       </div>
     </header>
@@ -29,10 +29,26 @@
         <h1>EMPRÉSTIMOS</h1>
         <div class="home-dados">100</div>
       </section>
-      <section class="home-area-main-panel" id="livros">
+      <section class="home-area-main-panel ativo" id="livros">
+        <div class="panel-cadastro" id="areaCadLivros">
+          <form action="">
+            <label for="" class="gfp1">Título</label>
+            <input type="text" class="gfp5" />
+            <label for="" class="gfp2">Autor</label>
+            <input type="text" class="gfp6" />
+            <label for="" class="gfp3">Categoria</label>
+            <input type="text" class="gfp7" />
+            <label for="" class="gfp4">quantidade</label>
+            <input type="number" class="gfp8" placeholder="num máximo: 999"/>
+            <input type="submit" class="gfp9 cadastrar">
+            <button class="gfp 10close" onclick="fecharCadastroLivros()">fechar</button>
+          </form>
+        </div>
         <nav class="home-area-main-panel-nav">
           <input type="search" />
-          <button>Novo livro</button>
+          <button onclick="exibirCadastroLivros()" id="btnLivro">
+            Novo livro
+          </button>
         </nav>
         <div class="home-area-main-panel-table-container">
           <table>
@@ -70,6 +86,21 @@
         </div>
       </section>
       <section class="home-area-main-panel" id="users">
+        <div class="panel-cadastro">
+          <form action="">
+              <label for="" class="gfp1">Título</label>
+              <input type="text" class="gfp5" />
+              <label for="" class="gfp2">Autor</label>
+              <input type="text" class="gfp6" />
+              <label for="" class="gfp3">Categoria</label>
+              <input type="text" class="gfp7" />
+              <label for="" class="gfp4">quantidade</label>
+              <input type="number" class="gfp8" placeholder="num máximo: 999"/>
+              <input type="submit" class="gfp9 cadastrar">
+              <button class="gfp 10close" onclick="fecharCadastroLivros()">fechar</button>
+            </form>
+        </div>
+        </div>
         <nav class="home-area-main-panel-nav">
           <input type="search" placeholder="procurar nome" />
           <button>Novo(a) leitor(a)</button>
@@ -109,7 +140,22 @@
           </table>
         </div>
       </section>
-      <section class="home-area-main-panel ativo" id="emprestimos">
+      <section class="home-area-main-panel" id="emprestimos">
+        <div class="panel-cadastro">
+          <form action="">
+              <label for="" class="gfp1">Título</label>
+              <input type="text" class="gfp5" />
+              <label for="" class="gfp2">Autor</label>
+              <input type="text" class="gfp6" />
+              <label for="" class="gfp3">Categoria</label>
+              <input type="text" class="gfp7" />
+              <label for="" class="gfp4">quantidade</label>
+              <input type="number" class="gfp8" placeholder="num máximo: 999"/>
+              <input type="submit" class="gfp9 cadastrar">
+              <button class="gfp 10close" onclick="fecharCadastroLivros()">fechar</button>
+            </form>
+        </div>
+        </div>
         <nav class="home-area-main-panel-nav">
           <input type="search" placeholder="procurar nome" />
           <div class="home-area-main-panel-nav-dados">atrasados: 20</div>
