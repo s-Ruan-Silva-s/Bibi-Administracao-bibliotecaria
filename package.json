@@ -2,7 +2,7 @@
   "name": "biblioteca",
   "version": "1.0.0",
   "description": "Este projeto serve de estudo para mim, irei avançando no projeto conforme meus estudos. este projeto é de uso livre e focado em escolas. Este projeto usará as seguintes tecnologias: HTML, CSS, JS, NodeJS, MYSQL. Nenhum framework será utilizado.",
-  "main": "index.js",
+  "main": "index.ejs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +10,15 @@
     "type": "git",
     "url": "git+https://github.com/s-Ruan-Silva-s/Bibi-Administracao-bibliotecaria.git"
   },
-  "author": "Ruan Silva",
+  "author": "Ruan Silva <@ruan.s.abc@gmail.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/s-Ruan-Silva-s/Bibi-Administracao-bibliotecaria/issues"
   },
   "homepage": "https://github.com/s-Ruan-Silva-s/Bibi-Administracao-bibliotecaria#readme",
   "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0",
     "sqlite3": "^5.1.7"
   }
 }
