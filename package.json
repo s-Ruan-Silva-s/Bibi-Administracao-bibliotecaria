@@ -1,0 +1,23 @@
+{
+  "name": "bibi",
+  "version": "1.0.0",
+  "description": "HTML, CSS, JS, NODEJS, EXPRESS, SQLITE ",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/s-Ruan-Silva-s/Bibi-Administracao-bibliotecaria.git"
+  },
+  "author": "Ruan <ruan.s.abc@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/s-Ruan-Silva-s/Bibi-Administracao-bibliotecaria/issues"
+  },
+  "homepage": "https://github.com/s-Ruan-Silva-s/Bibi-Administracao-bibliotecaria#readme",
+  "dependencies": {
+    "express": "^5.1.0",
+    "sqlite3": "^5.1.7"
+  }
+}
