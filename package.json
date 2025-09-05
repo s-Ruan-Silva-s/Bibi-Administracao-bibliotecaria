@@ -4,7 +4,7 @@
   "description": "HTML, CSS, JS, NODEJS, EXPRESS, SQLITE ",
   "main": "app.js",
   "scripts": {
-    "test": "nodemon app.js"
+    "test": "nodemon app.mjs"
   },
   "repository": {
     "type": "git",
