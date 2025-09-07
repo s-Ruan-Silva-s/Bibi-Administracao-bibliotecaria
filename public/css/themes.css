@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Nunito:wght@400;700&family=Quicksand:wght@400;700&display=swap");
+
+:root {
+  --principal-bg-color: #e6efe9;
+  /* FONTS */
+  --principal-font-color: #5d5d5d;
+  --highlight-font-color: #2f5d62;
+  --principal-font: "Merriweather", serif;
+  --title-font: "Nunito", sans-serif;
+  --generic-font: "Quicksand", sans-serif;
+  --bold: 700;
+  /* -------------------- */
+
+  /* BORDER */
+  --border: 1px solid #c5e2cf;
+  --border-input: 2px solid #88b999;
+  --border-layout: 3px solid #c5e2cf;
+  --radius-light: 10px;
+  --radius-medium: 20px;
+  --radius-circle: 50%;
+  /* -------------------- */
+}

@@ -1,22 +1,54 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/themes.css" />
+    <link rel="stylesheet" href="/css/base.css" />
+    <link rel="stylesheet" href="/css/layout.css" />
+    <link rel="stylesheet" href="/css/models.css" />
+    <link rel="stylesheet" href="/css/state.css" />
     <title>Bibi</title>
-</head>
-<body>
-    <main>
-        <form action="/books/registerBook" method="post">
-            <input type="text" name="title" placeholder="titulo" required>
-            <input type="text" name="author" placeholder="autor" required>
-            <select name="category" id="">
-                <option value="">Categoria</option>
-                <option value="poetry">poesia</option>
-            </select>
-            <input type="number" name="quantity" placeholder="quantidade">
-            <input type="submit" value="cadastrar">
+  </head>
+  <body>
+    <div class="l_structure-home">
+      <picture class="l_logo">
+        <img src="/img/logo.png" alt="system logo" class="logo" />
+      </picture>
+      <aside class="l_aside">
+        <nav>
+          <button class="btn_aside_nav" onclick="">Cadastros</button>
+          <button class="btn_aside_nav" onclick="">Livros</button>
+          <button class="btn_aside_nav" onclick="">Leitores</button>
+          <button class="btn_aside_nav" onclick="">Empréstimos</button>
+        </nav>
+      </aside>
+      <main class="l_main">
+        <h1>Registrar Livro/Leitor</h1>
+        <nav class="nav_main">
+          <button btn_main_nav>LIVROS</button>
+          <button btn_main_nav>LEITOR</button>
+        </nav>
+        <form action="/books/registerBook" method="post" class="form">
+          <input type="text" name="title" placeholder="titulo" required />
+          <input type="text" name="author" placeholder="autor" required />
+          <select name="category" id="" required>
+            <option value="" disabled selected>Categoria</option>
+            <option value="academic">acadêmico</option>
+            <option value="drama">drama</option>
+            <option value="fiction">ficção</option>
+            <option value="poetry">poesia</option>
+            <option value="comic">quadrinhos</option>
+            <option value="romance">romance</option>
+            <option value="terror">terror</option>
+          </select>
+          <input type="number" name="quantity" placeholder="quantidade" />
+          <input type="submit" value="cadastrar" />
         </form>
-    </main>
-</body>
+      </main>
+    </div>
+    <script src="#">
+      //spa script
+    </script>
+  </body>
 </html>

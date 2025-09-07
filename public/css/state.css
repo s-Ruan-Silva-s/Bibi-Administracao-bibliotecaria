@@ -1,0 +1,16 @@
+.btn_aside_nav:hover {
+  font-weight: var(--bold);
+  color: var(--highlight-font-color);
+  border: var(--border);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.nav_main button:hover {
+  font-weight: var(--bold);
+  color: var(--highlight-font-color);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.form input[type="submit"]:hover {
+  font-weight: var(--bold);
+  color: var(--highlight-font-color);
+  border-radius: var(--radius-medium);
+}

@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--generic-font);
+}
+body {
+  background: var(--principal-bg-color);
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--title-font);
+  font-weight: var(--bold);
+}
+p,
+td,
+label {
+  font-style: var(--principal-font);
+}
+input {
+  display: block;
+  outline: none;
+}
