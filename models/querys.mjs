@@ -11,3 +11,15 @@ export function insertBook(title, author, category, quantity, callback){
         }
     )
 }
+export function insertReader(name, role, email, callback){
+    con.run(
+        `INSERT INTO readers (name, role, email ) values (?,?,?)`,
+        [name, role, email],
+        function(err){
+            if(callback){
+                callback(err, this.lastID);
+            }
+        }
+    )
+}
+

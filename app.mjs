@@ -14,6 +14,7 @@ const __dirname = path.dirname(__filename);
 app.use(express.static(path.join(__dirname, "public")));
 app.use(express.urlencoded({extended:true}));
 app.use("/", homepage);
-app.use("/books", db)
+app.use("/books", db);
+app.use("/readers", db);
 
 app.listen(3000, console.log("server ligado!"));
