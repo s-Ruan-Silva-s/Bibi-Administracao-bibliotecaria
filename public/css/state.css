@@ -14,3 +14,6 @@
   color: var(--highlight-font-color);
   border-radius: var(--radius-medium);
 }
+.hide{
+  display: none;
+}

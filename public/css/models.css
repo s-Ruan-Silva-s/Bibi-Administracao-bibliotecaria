@@ -35,3 +35,12 @@
   border-radius: var(--radius-light);
   border: var(--border-input);
 }
+.section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1em;
+  padding: 10px;
+  height: 100%;
+}
